@@ -1,0 +1,10 @@
+A Simple Shell: In this project, you are required to implement a simple shell program by
+using fork()/execv() system calls. Your code should support the basic bash-like shell
+functions, such as loading and running a program, and also some advanced features, such as
+background execution (&) to execute a program in the background, pipe (|) to direct output
+from one program as input to another program, and I/O redirection (>) to send output to
+another file. Your simple shell should also support a special command “history”, which
+displays the latest 100 commands typed by the user and “histat”, which displays the top 10
+most frequently typed commands in the descending order.
+
+Failed to implement some advanced features.
