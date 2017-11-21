@@ -1,0 +1,70 @@
+HTML (Hyper Text Markup Language): not a programming language, it is a markup language that defines the structure of a webpage. 
+
+Block elements and inline elements:
+   Block element forms a visible block on a page, which starts from a new line: <p>  </p>
+   Inline element will not cause a new line: <em> </em>, <a>, <strong>, etc
+
+Empty elements (void elements): consist only of a single tag, which is usually used to insert/embed something in the document at the place. i.e: <img>
+
+Attributes: contain extra information about the element which you don't want to appear in the actual content.
+An attribute should have:
+    1. A space between it and the element name (or the previous attribute, if the element already has one or more attributes.)
+    2. The attribute name, followed by an equals sign.
+    3. An attribute value, with opening and closing quote marks wrapped around it.
+Some attributes:
+    <a>: anchor that makes the piece of text a hyperlink.
+    <href>: link to the web address to its value. 
+    
+Boolean Attributes: attributes without values or only have one value that is generally the same as the attribute name. 
+     For example: <input type="text" disabled="disabled">  // disabled has one value
+                  <input type="text" disabled>    // same as above
+     
+Single quotes and double quotes are equivalent in HTML, but you should not mix then. 
+      <a href="http://www.example.com">A link to my example.</a>
+      <a href='http://www.example.com'>A link to my example.</a>
+
+Anatomy of an HTML document:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+  </body>
+</html>
+
+1. <!DOCTYPE html> is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
+2. <html></html>: The <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
+3. <head></head>: The <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't 
+   the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear 
+   in search results, CSS to style our content, character set declarations, and more. 
+4. <meta charset="utf-8">: This element sets the character set your document should use to UTF-8, which includes most characters from 
+   the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no 
+   reason not to set this, and it can help avoid some problems later on.
+5. <title></title>: The <title> element. This sets the title of your page, which is the title that appears in the browser tab the page 
+   is loaded in, and is used to describe the page when you bookmark/favourite it.
+6. <body></body>: The <body> element. This contains all the content that you want to show to web users when they visit your page, 
+   whether that's text, images, videos, games, playable audio tracks, or whatever else.
+
+No matter how much whitespace you use (which can include space characters, but also line breaks), the HTML parser reduces each one down to a single space when rendering the code.
+<p>Dogs are silly.</p>
+<p>Dogs        are
+         silly.</p>    // they are equal
+
+To include special characters in HTML, each character reference is started with an ampersand(&) and ended by a semi-colon(;). 
+Literal character	                Character reference equivalent
+<	                                        &lt;
+>	                                        &gt;
+"	                                        &quot;
+'	                                        &apos;
+&	                                        &amp;
+
+For example: <p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+             In HTML, you define a paragraph using the <p> element.
+             
+HTML comments: 
+    To turn a section of content inside your HTML file into a comment, you need to wrap it in the special markers <!-- and -->    
+    
+Reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started    
